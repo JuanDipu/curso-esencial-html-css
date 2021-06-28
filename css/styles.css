@@ -78,7 +78,18 @@ h2 {
 h3 {
   font-size: 1.5em;
 }
-
+pre{
+  background: #FEC62E;
+}
+.hero{
+  /* Degradado */
+background-image:linear-gradient(to top,rgba(255,255,255,.3),transparent ), url('../images/pattern.png');
+/* background-repeat: no-repeat; */
+/* background-position:center; */
+/* background-size: 100%; */
+height: 350px;
+width: 100%;
+}
 /* @media screen and (max-width: 600px) {
   body {
     font-size: 5px;
