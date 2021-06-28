@@ -36,7 +36,9 @@
 body {
   /*  color: #212121; */
   color: var(--gray30);
-  font-family:charter ;/* Nombre de fuente */
+/*   font-family:charter ;/* Nombre de fuente */ 
+ font-family:'Roboto',sans-serif ;/* Nombre de fuente */ 
+ 
   /* font-size: 10px; */
 }
 a {
