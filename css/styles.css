@@ -1,3 +1,28 @@
+@font-face {
+  font-family: charter;
+  src: url('../fonts/fonts/charter-regular.otf');
+  font-style:normal ;
+  font-weight: 400;/* normal */
+}
+@font-face {
+  font-family: charter;
+  src: url('../fonts/fonts/charter-italic.otf');
+  font-style:italic ;
+  font-weight: 400;/* normal */
+}
+@font-face {
+  font-family: charter;
+  src: url('../fonts/fonts/charter-bold.otf');
+  font-style:normal ;
+  font-weight: bold;/* normal */
+}
+@font-face {
+  font-family: charter;
+  src: url('../fonts/fonts/charter-bold-italic.otf');
+  font-style:italic ;
+  font-weight: bold;/* normal */
+}
+
 /* apunta al html, pero se pone en Pseudo Clase tiene más peso */
 :root {
   font-size: 16px;
@@ -11,6 +36,7 @@
 body {
   /*  color: #212121; */
   color: var(--gray30);
+  font-family:charter ;/* Nombre de fuente */
   /* font-size: 10px; */
 }
 a {
