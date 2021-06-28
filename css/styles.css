@@ -96,3 +96,19 @@ width: 100%;
   }
 }
  */
+/* Pseudoelemento un elemento después a algún elemento */
+
+h3::before{
+  content: '-'; 
+}
+h3::after{
+  content: '';
+  width: 32px;
+  height: 4px;
+  background: var(--gray30);
+  display:inline-block;
+
+}
+/* ::selection{
+  background: blue;
+} */
