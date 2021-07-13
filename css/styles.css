@@ -1,26 +1,26 @@
 @font-face {
   font-family: charter;
-  src: url('../fonts/fonts/charter-regular.otf');
-  font-style:normal ;
-  font-weight: 400;/* normal */
+  src: url("../fonts/fonts/charter-regular.otf");
+  font-style: normal;
+  font-weight: 400; /* normal */
 }
 @font-face {
   font-family: charter;
-  src: url('../fonts/fonts/charter-italic.otf');
-  font-style:italic ;
-  font-weight: 400;/* normal */
+  src: url("../fonts/fonts/charter-italic.otf");
+  font-style: italic;
+  font-weight: 400; /* normal */
 }
 @font-face {
   font-family: charter;
-  src: url('../fonts/fonts/charter-bold.otf');
-  font-style:normal ;
-  font-weight: bold;/* normal */
+  src: url("../fonts/fonts/charter-bold.otf");
+  font-style: normal;
+  font-weight: bold; /* normal */
 }
 @font-face {
   font-family: charter;
-  src: url('../fonts/fonts/charter-bold-italic.otf');
-  font-style:italic ;
-  font-weight: bold;/* normal */
+  src: url("../fonts/fonts/charter-bold-italic.otf");
+  font-style: italic;
+  font-weight: bold; /* normal */
 }
 
 /* apunta al html, pero se pone en Pseudo Clase tiene más peso */
@@ -36,9 +36,9 @@
 body {
   /*  color: #212121; */
   color: var(--gray30);
-/*   font-family:charter ;/* Nombre de fuente */ 
- font-family:'Roboto',sans-serif ;/* Nombre de fuente */ 
- 
+  /*   font-family:charter ;/* Nombre de fuente */
+  font-family: "Roboto", sans-serif; /* Nombre de fuente */
+
   /* font-size: 10px; */
 }
 a {
@@ -78,17 +78,22 @@ h2 {
 h3 {
   font-size: 1.5em;
 }
-pre{
-  background: #FEC62E;
+pre {
+  background: #fec62e;
 }
-.hero{
+.hero {
   /* Degradado */
-background-image:linear-gradient(to top,rgba(255,255,255,.3),transparent ), url('../images/pattern.png');
-/* background-repeat: no-repeat; */
-/* background-position:center; */
-/* background-size: 100%; */
-height: 350px;
-width: 100%;
+  background-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.3),
+      transparent
+    ),
+    url("../images/pattern.png");
+  /* background-repeat: no-repeat; */
+  /* background-position:center; */
+  /* background-size: 100%; */
+  height: 350px;
+  width: 100%;
 }
 /* @media screen and (max-width: 600px) {
   body {
@@ -97,17 +102,21 @@ width: 100%;
 }
  */
 /* Pseudoelemento un elemento después a algún elemento */
-
-h3::before{
-  content: '-'; 
+.section-content {
+  counter-reset: titleList;
 }
-h3::after{
-  content: '';
+.section-content h3 {
+  counter-increment: titleList;
+}
+.section-content h3::before {
+  content: counter(titleList, decimal);
+}
+.section-content h3::after {
+  content: "";
   width: 32px;
   height: 4px;
   background: var(--gray30);
-  display:inline-block;
-
+  display: inline-block;
 }
 /* ::selection{
   background: blue;
